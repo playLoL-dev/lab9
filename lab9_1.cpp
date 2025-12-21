@@ -30,7 +30,7 @@ int main(){
 	//you can change input argument of 'setprecision()' to see the effect
 	cout << fixed << setprecision(2); 
 
-	while (NewBalance >= 0)
+	while (NewBalance > 0)
 	{
 	cout << setw(13) << left << i+1; 
 	cout << setw(13) << left << loan ;
@@ -45,7 +45,7 @@ int main(){
 	total = loan + interest_amount;
 	NewBalance = total - payment;
 	}
-	if (NewBalance < 0)
+	if (NewBalance <= 0)
 		{
 		cout << setw(13) << left << i+1; 
 		cout << setw(13) << left << loan ;
