@@ -1,8 +1,29 @@
 #include<iostream>
 using namespace std;
 
-//Write the function printO() here
-
+double printO( double a, double b )
+{
+	if(a == 0 || b <= 0)
+	{
+   	cout << "Invalid input";
+	}
+	else
+	{
+   		int i = 0;
+   			while (i < a)
+   			{
+				int j = 0;
+   				while (j < b)
+   				{
+   					cout << "O";
+   					j++;
+   				}
+				cout << endl;
+   				i++;
+			}
+	}
+	return 0;
+}
 int main(){
 	
 	printO(2,2);
