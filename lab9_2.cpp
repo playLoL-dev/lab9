@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-double printO( double a, double b )
+void printO( double a, double b )
 {
 	if(a == 0 || b <= 0)
 	{
@@ -22,7 +22,6 @@ double printO( double a, double b )
    				i++;
 			}
 	}
-	return 0;
 }
 int main(){
 	
